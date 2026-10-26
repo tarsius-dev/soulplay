@@ -53,7 +53,7 @@ const NotFoundPage = () => (
 
 export default function App() {
   const [location] = useLocation();
-  const isAdminRoute = location.startsWith('/admin') && location !== '/admin/login';
+  const isAdminRoute = location.startsWith('/admin') && !location.startsWith('/admin/login');
 
   return (
     <AuthProvider>
@@ -79,7 +79,9 @@ export default function App() {
 
             {/* Admin Routes */}
             <Route path="/admin/login" component={AdminLoginPage} />
+            <Route path="/admin/login/" component={AdminLoginPage} />
             <Route path="/admin" component={AdminDashboardPage} />
+            <Route path="/admin/" component={AdminDashboardPage} />
             <Route path="/admin/titles" component={AdminTitlesPage} />
             <Route path="/admin/titles/new" component={AdminTitleFormPage} />
             <Route path="/admin/titles/:id/edit" component={AdminTitleFormPage} />

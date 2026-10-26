@@ -93,6 +93,11 @@ export const Footer: React.FC = () => {
                   Hubungi Redaksi
                 </Link>
               </li>
+              <li>
+                <Link href="/admin/login" className="hover:text-rose-400 text-slate-500 transition-colors">
+                  Portal Administrator
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
