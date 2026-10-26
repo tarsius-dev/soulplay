@@ -1,0 +1,6 @@
+{
+  "name": "SeoulPlay — Korean Drama Discovery & Streaming",
+  "description": "Discover and stream verified Korean dramas and movies with curated editorial guides, authorized external players, and full season navigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
